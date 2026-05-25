@@ -1,11 +1,11 @@
 export const brand = {
-  name: "PoupaJá",
-  tagline: "Poupa mais em cada compra",
-  logoUrl: "/poupajar.png",
-  sidebarTagline: "Compras inteligentes",
+  name: "Continente",
+  tagline: "Poupe mais, viva melhor",
+  logoUrl: "/continente.png",
+  sidebarTagline: "O seu supermercado",
   colors: {
-    primary: "#16A34A",
-    secondary: "#15803D",
-    splashGradient: "from-green-600 via-green-500 to-emerald-600",
+    primary: "#E30613",
+    secondary: "#B00010",
+    splashGradient: "from-red-600 via-red-500 to-red-700",
   },
 };
