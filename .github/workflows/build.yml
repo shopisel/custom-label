@@ -26,6 +26,8 @@ jobs:
         run: |
           cp custom/brand.config.ts app/src/brand.config.ts
           cp custom/.env app/.env
+          cp custom/continente.png app/public/continente.png
+          cp custom/favicon.png app/public/favicon.png
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
