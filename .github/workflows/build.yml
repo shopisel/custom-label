@@ -10,20 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout custom-label
+        uses: actions/checkout@v4
+        with:
+          path: custom
+
       - name: Clone white-label base
         uses: actions/checkout@v4
         with:
           repository: shopisel/frontend-web
           ref: develop
           path: app
-
-      - name: Apply custom brand
-        run: cp brand.config.ts app/src/brand.config.ts
-
-      - name: Checkout custom-label (for brand.config.ts)
-        uses: actions/checkout@v4
-        with:
-          path: custom
 
       - name: Apply custom brand
         run: cp custom/brand.config.ts app/src/brand.config.ts
